@@ -1,0 +1,9 @@
+Test-Command: set -e
+ ; cp -r tests "$AUTOPKGTEST_TMP"
+ ; for py in $(py3versions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; PYTHONPATH=$AUTOPKGTEST_TMP/tests/cloudpickle_testpkg $py -m pytest -s -v
+ ; done
+Depends: @, python3-all, python3-pytest,
+ python3-psutil

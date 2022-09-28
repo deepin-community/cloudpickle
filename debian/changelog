@@ -1,0 +1,113 @@
+cloudpickle (2.0.0-1) unstable; urgency=medium
+
+  * Add Multi-Arch: foreign (Closes: #960902)
+    - Thanks  Helmut Grohne
+  * Update Mainainer to new Debian Python Team address
+  * Update debian/watch version
+  * Add Rules-Requires-Root: no
+  * New upstream release
+
+ -- Diane Trout <diane@ghic.org>  Sat, 18 Sep 2021 18:57:39 -0700
+
+cloudpickle (1.6.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+  [ Diane Trout ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+  * Update Standards-Version to 4.5.0. No changes needed.
+  * Use pytest -v for unit tests, as it's easier to see what broke
+  * Set PYTHONPATH so unit tests can find an included test package
+  * update d/tests/control to run real unit tests against installed package
+  * New upstream release.
+
+ -- Diane Trout <diane@ghic.org>  Fri, 06 Nov 2020 15:28:19 -0800
+
+cloudpickle (1.2.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Diane Trout ]
+  * Remove autopkgtests for Python 2 version
+    Thanks to Michael Hudson-Doyle for spotting this
+    (Closes: #943931)
+
+ -- Diane Trout <diane@ghic.org>  Thu, 31 Oct 2019 19:24:30 -0700
+
+cloudpickle (1.2.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+  [ Diane Trout ]
+  * New upstream release.
+  * Remove Python 2 package and build dependencies
+  * Update to debhelper-compat =12
+
+ -- Diane Trout <diane@ghic.org>  Wed, 04 Sep 2019 21:51:15 -0700
+
+cloudpickle (0.8.0-1) unstable; urgency=medium
+
+  * New upstream version 0.8.0
+  * Update to debhelper compat level 11
+  * Update to Standards-Version 4.3.0. No changes needed
+  * Add python{,3}-psutil build-dependency for test cases
+  * Add python-concurrent.futures dependency for python 2 version
+
+ -- Diane Trout <diane@ghic.org>  Thu, 14 Feb 2019 15:06:24 -0800
+
+cloudpickle (0.5.6-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Diane Trout ]
+  * New upstream release. (Closes: #909986)
+  * Cleanup pytest directory after build
+
+ -- Diane Trout <diane@ghic.org>  Tue, 03 Jul 2018 21:54:43 -0700
+
+cloudpickle (0.5.2-2) unstable; urgency=medium
+
+  * Forgot to update substvar for the Python 2 package (Closes: #884686)
+    - Thanks: Mattia Rizzolo
+
+ -- Diane Trout <diane@ghic.org>  Mon, 18 Dec 2017 10:32:39 -0800
+
+cloudpickle (0.5.2-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: #883782)
+  * Updated Standards-Version to 4.1.2. No changes needed.
+  * Update debhelper to compat 10
+  * Build Python 2 version for spyder. (Closes: 883784)
+
+ -- Diane Trout <diane@ghic.org>  Fri, 08 Dec 2017 15:04:32 -0800
+
+cloudpickle (0.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update standards version to 4.1.1. No changes needed.
+  * Remove unnecessary Testsuite header.
+
+ -- Diane Trout <diane@ghic.org>  Fri, 13 Oct 2017 08:24:04 -0700
+
+cloudpickle (0.3.1-1) unstable; urgency=medium
+
+  * remove unnecessary debian/files
+  * Switch from git-dpm to gbp
+  * New upstream version 0.3.1
+
+ -- Diane Trout <diane@ghic.org>  Thu, 01 Jun 2017 20:53:11 -0700
+
+cloudpickle (0.2.1-1) unstable; urgency=low
+
+  * Initial Packaging (Closes: #847497)
+
+ -- Diane Trout <diane@ghic.org>  Mon, 05 Dec 2016 14:24:21 -0800

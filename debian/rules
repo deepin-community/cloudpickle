@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=cloudpickle
+export PYBUILD_TEST_PYTEST=1
+export PYBUILD_TEST_ARGS=-s -v
+export PYTHONPATH=$(CURDIR)/tests/cloudpickle_testpkg
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_clean:
+	dh_auto_clean
+	# clean leftover from running tests
+	-rm -rf .cache
+	-rm -rf .pytest_cache
