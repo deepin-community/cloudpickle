@@ -6,4 +6,6 @@ Test-Command: set -e
  ; PYTHONPATH=$AUTOPKGTEST_TMP/tests/cloudpickle_testpkg $py -m pytest -s -v
  ; done
 Depends: @, python3-all, python3-pytest,
- python3-psutil
+ python3-py,
+ python3-psutil,
+ python3-typing-extensions,
