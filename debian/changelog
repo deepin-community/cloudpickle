@@ -1,3 +1,48 @@
+cloudpickle (3.0.0-2) unstable; urgency=medium
+
+  * Team Upload
+  * Remove dependency on old python3-mock
+
+ -- Alexandre Detiste <tchet@debian.org>  Mon, 26 Feb 2024 22:49:10 +0100
+
+cloudpickle (3.0.0-1) unstable; urgency=medium
+
+  [ Diane Trout ]
+  * New upstream release. (Closes: #1056237)
+  * Switch to github releases in d/watch as pypi releases lack the tests.
+  * Add flit as a build-dependency
+  * Add pybuild-plugin-pyproject as build-dependency.
+  * Update debhelper-compat to 13
+  * Update standards-version to 4.6.2
+  * Add typing-extension as a test dependency
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+
+ -- Diane Trout <diane@ghic.org>  Sun, 03 Dec 2023 20:05:35 -0800
+
+cloudpickle (2.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove fix-classmethod-test.patch applied upstream
+  * Add dependency on python3-py for tests (Closes: #1040411)
+
+ -- Diane Trout <diane@ghic.org>  Wed, 05 Jul 2023 20:11:28 -0700
+
+cloudpickle (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add fix-classmethod-test.patch (Closes: #1024205)
+
+ -- Diane Trout <diane@ghic.org>  Sun, 20 Nov 2022 12:27:51 -0800
+
 cloudpickle (2.0.0-1) unstable; urgency=medium
 
   * Add Multi-Arch: foreign (Closes: #960902)
@@ -24,6 +69,20 @@ cloudpickle (1.6.0-1) unstable; urgency=medium
   * New upstream release.
 
  -- Diane Trout <diane@ghic.org>  Fri, 06 Nov 2020 15:28:19 -0800
+
+cloudpickle (1.3.0-1) unstable; urgency=medium
+
+  [ Emmanuel Arias ]
+  * Team upload.
+  * New upstream version 1.3.0 (Closes: #952477)
+  * d/control: Bump standards version to 4.5.0
+  * d/gbp.conf: Set debian/master as default branch
+  * d/salsa-ci.yml: enable salsa-ci
+
+  [ Jonathan Carter ]
+  * Declare Rules-Requires-Root: no
+
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Mon, 24 Feb 2020 19:14:11 -0300
 
 cloudpickle (1.2.1-2) unstable; urgency=medium
 
